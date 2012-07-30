@@ -17,6 +17,12 @@ snippet block
 	{% block ${1} %}
 	${2}
 	{% endblock %}
+snippet bs
+	{{ block.super }}
+snippet block_and_bs
+	{% block ${1} %}{{ block.super }}
+	${2}
+	{% endblock %}
 snippet #
 	{# ${1:comment} #}
 snippet comment
